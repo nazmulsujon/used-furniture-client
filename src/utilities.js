@@ -1,6 +1,20 @@
 // import social icons
-import { FaFacebook, FaWhatsapp, FaTwitter, FaLinkedin, FaSnapchat, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, FaTwitter, FaLinkedin, FaSnapchat, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+
+// Banner Images
+import banner1 from "./assets/banner-images/bedroom-furniture.jpg";
+import banner2 from "./assets/banner-images/dining-table.jpg";
+import banner3 from "./assets/banner-images/kitchen-furniture.jpg";
+import banner4 from "./assets/banner-images/use-airconditioner.webp";
+import banner5 from "./assets/banner-images/used-refrigerator.webp";
+import banner6 from "./assets/banner-images/used-oven.jpg";
+import banner7 from "./assets/banner-images/washing-machine.png";
+import banner8 from "./assets/banner-images/washing-machine.webp";
+import banner9 from "./assets/banner-images/single-sofa.jpg";
+import banner10 from "./assets/banner-images/use-sofa.png";
+import banner11 from "./assets/banner-images/airconditioners.webp";
+import banner12 from "./assets/banner-images/scarps.jpg";
 
 // social icons
 export const socialIcons = [
@@ -11,6 +25,10 @@ export const socialIcons = [
   {
     icon: <FaWhatsapp />,
     href: "https://api.whatsapp.com/send?phone=966531015429",
+  },
+  {
+    icon: <FaYoutube />,
+    href: "https://www.youtube.com/@mdnowab1327",
   },
   {
     icon: <FiMail />,
@@ -31,5 +49,44 @@ export const socialIcons = [
   {
     icon: <FaSnapchat />,
     href: "https://www.snapchat.com/add/md_nowab23?sender_web_id=71f22bc9-825e-4b42-b1bd-8d633e2e2dd7&device_type=desktop&is_copy_url=true/",
+  },
+];
+
+export const banners = [
+  {
+    image: banner1,
+  },
+  {
+    image: banner2,
+  },
+  {
+    image: banner3,
+  },
+  {
+    image: banner4,
+  },
+  {
+    image: banner5,
+  },
+  {
+    image: banner6,
+  },
+  {
+    image: banner7,
+  },
+  {
+    image: banner8,
+  },
+  {
+    image: banner9,
+  },
+  {
+    image: banner10,
+  },
+  {
+    image: banner11,
+  },
+  {
+    image: banner12,
   },
 ];

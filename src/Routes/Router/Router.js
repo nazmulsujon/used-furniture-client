@@ -1,6 +1,9 @@
 import Main from "../../Layouts/Main/Main";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
+import About from "../../Pages/Home/About/About";
+import Contact from "../../Pages/Home/Contact/Contact";
 import Home from "../../Pages/Home/Home/Home";
+import Products from "../../Pages/Products/Products/Products";
 const { createBrowserRouter } = require("react-router-dom");
 
 const router = createBrowserRouter([
@@ -12,6 +15,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/products",
+        element: <Products></Products>,
       },
     ],
   },

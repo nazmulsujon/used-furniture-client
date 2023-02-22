@@ -17,12 +17,18 @@ const position = [26.416, 50.104];
 
 const Map = () => {
   return (
-    <MapContainer className="mx-auto rounded" center={position} zoom={13} style={{ height: "400px", width: "800px" }}>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position}>
-        <Popup>Hail, Al Qadisiyah, Dammam 32247, Saudi Arabia</Popup>
-      </Marker>
-    </MapContainer>
+    <div className="">
+      <MapContainer
+        className="mx-auto rounded w-[350px] h-[300px] lg:w-[900px] lg:h-[450px] "
+        center={position}
+        zoom={12}
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <Marker position={position}>
+          <Popup>Hail, Al Qadisiyah, Dammam 32247, Saudi Arabia</Popup>
+        </Marker>
+      </MapContainer>
+    </div>
   );
 };
 
