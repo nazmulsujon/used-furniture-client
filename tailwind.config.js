@@ -38,7 +38,6 @@ module.exports = {
           "--animation-btn": "0",
           "--animation-input": "0",
 
-          "--btn-text-case": "uppercase",
           "--navbar-padding": "0.5rem",
           "--border-btn": "1px",
         },

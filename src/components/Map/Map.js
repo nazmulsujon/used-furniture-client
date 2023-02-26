@@ -17,9 +17,9 @@ const position = [26.416, 50.104];
 
 const Map = () => {
   return (
-    <div className="">
+    <div>
       <MapContainer
-        className="mx-auto rounded w-[350px] h-[300px] lg:w-[900px] lg:h-[450px] "
+        className="mx-auto rounded w-[300px] h-[300px] lg:w-[800px] lg:h-[400px]"
         center={position}
         zoom={12}
       >

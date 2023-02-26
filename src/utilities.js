@@ -1,6 +1,6 @@
 // import social icons
 import { FaFacebook, FaWhatsapp, FaTwitter, FaLinkedin, FaSnapchat, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 
 // Banner Images
 import banner1 from "./assets/banner-images/bedroom-furniture.jpg";
@@ -88,5 +88,21 @@ export const banners = [
   },
   {
     image: banner12,
+  },
+];
+
+// contact information
+export const contact = [
+  {
+    icon: <FiMail />,
+    title: "هل لديك اي سؤال؟",
+    subtitle: "نحن هنا لمساعدتك.",
+    description: "إبعث لي رسالة إلكترونية إلى mdnowab29@gmail.com",
+  },
+  {
+    icon: <FiMapPin />,
+    title: "موقعنا",
+    subtitle: "الدمام ، الخبر ، القطيف ، الجبيل ، الأحساء",
+    description: "نحن نخدم العملاء في هذه المجالات.",
   },
 ];

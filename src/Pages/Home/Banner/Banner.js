@@ -16,13 +16,17 @@ import "./Banner.css";
 import { FreeMode, Pagination } from "swiper";
 import { banners } from "../../../utilities";
 
+// react photoview package
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+
 const Banner = () => {
   return (
     <section>
-      <div className="font-bold font-sans text-2xl md:text-3xl text-center py-5 bg-[#e8f4fd] text-info">
+      <div className="section-title mx-2 font-bold text-xl md:text-2xl text-center py-5 text-info">
         <Fade left>
           <h1>نشتري اثاث المستعمل بأفضل الأسعار</h1>
-          <h2>We Buy Your Used Furniture At The Best Prices 🥰</h2>
+          <h2>We buy your used furniture at the best prices 🥰</h2>
         </Fade>
       </div>
 
@@ -42,7 +46,11 @@ const Banner = () => {
           return (
             <SwiperSlide key={index}>
               <div className="h-[240px] w-[600px] md:h-[500px] md:w-[659px]">
-                <img src={image} alt="banner" className="h-full w-full" />
+                <PhotoProvider>
+                  <PhotoView src={image}>
+                    <img src={image} alt="banner" className="h-full w-full rounded" />
+                  </PhotoView>
+                </PhotoProvider>
               </div>
             </SwiperSlide>
           );

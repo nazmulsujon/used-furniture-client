@@ -3,21 +3,29 @@ import React from "react";
 import { GiRoundStar } from "react-icons/gi";
 // react reveal
 import Fade from "react-reveal/Fade";
+// react photoview package
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 // image
 import aboutIamge from "../../../assets/about-image.webp";
+import Specialities from "../../../components/Specialities/Specialities";
 
 const About = () => {
   return (
-    <div className="mx-3 lg:mx-12 mt-5 mb-32">
+    <div className="mx-3 lg:mx-12 my-8">
       <Fade top>
-        <h1 className="font-bold font-sans text-xl md:text-3xl text-center my-8 text-info">
-          Learn More About Us || تعلم المزيد عنا
-        </h1>
+        <div className="section-title mx-2 font-bold text-xl md:text-2xl text-center pb-6 text-info">
+          <h1>Learn more about us || تعلم المزيد عنا</h1>
+        </div>
       </Fade>
       <div className="lg:flex justify-between items-center">
         <Fade left>
           <div className="about-image-box lg:w-1/2 lg:mr-5">
-            <img src={aboutIamge} alt="aboutIamge" className="rounded w-full lg:h-[540px]" />
+            <PhotoProvider>
+              <PhotoView src={aboutIamge}>
+                <img src={aboutIamge} alt="aboutIamge" className="w-full lg:h-[540px] rounded-tl-3xl rounded-br-3xl" />
+              </PhotoView>
+            </PhotoProvider>
           </div>
         </Fade>
         <Fade right>
@@ -70,6 +78,7 @@ const About = () => {
           </div>
         </Fade>
       </div>
+      <Specialities></Specialities>
     </div>
   );
 };

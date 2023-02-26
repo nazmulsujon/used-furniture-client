@@ -4,6 +4,7 @@ import About from "../../Pages/Home/About/About";
 import Contact from "../../Pages/Home/Contact/Contact";
 import Home from "../../Pages/Home/Home/Home";
 import Products from "../../Pages/Products/Products/Products";
+import SingleProductDetails from "../../Pages/Products/SingleProductDetails/SingleProductDetails";
 const { createBrowserRouter } = require("react-router-dom");
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products></Products>,
+      },
+      {
+        path: "/product/:id",
+        element: <SingleProductDetails></SingleProductDetails>,
       },
     ],
   },

@@ -25,7 +25,7 @@ const NavBar = () => {
       </li>
       <li className="ml-1 my-1 font-semibold">
         <NavLink to={`/products`} className={({ isActive }) => (isActive ? " text-info rounded" : " rounded")}>
-          Products
+          Services
         </NavLink>
       </li>
     </React.Fragment>
