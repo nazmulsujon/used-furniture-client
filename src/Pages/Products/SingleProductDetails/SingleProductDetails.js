@@ -32,7 +32,7 @@ const SingleProductDetails = () => {
 
   //   fetch product by id
   useEffect(() => {
-    fetch(`http://localhost:5000/product/${id}`)
+    fetch(`https://api.dammamusedfurniture.com/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
