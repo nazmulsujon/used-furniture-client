@@ -10,22 +10,22 @@ const NavBar = () => {
     <React.Fragment>
       <li className="ml-1 my-1 font-semibold">
         <NavLink to={`/`} className={({ isActive }) => (isActive ? " text-info rounded" : " rounded")}>
-          Home
+          المنزل
         </NavLink>
       </li>
       <li className="ml-1 my-1 font-semibold">
         <NavLink to={`/about`} className={({ isActive }) => (isActive ? " text-info rounded" : " rounded")}>
-          About
+          من نحن
         </NavLink>
       </li>
       <li className="ml-1 my-1 font-semibold">
         <NavLink to={`/contact`} className={({ isActive }) => (isActive ? " text-info rounded" : " rounded")}>
-          Contact
+          اتصل بنا
         </NavLink>
       </li>
       <li className="ml-1 my-1 font-semibold">
         <NavLink to={`/products`} className={({ isActive }) => (isActive ? " text-info rounded" : " rounded")}>
-          Services
+          الخدمات
         </NavLink>
       </li>
     </React.Fragment>

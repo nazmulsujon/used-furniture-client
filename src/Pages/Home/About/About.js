@@ -15,7 +15,7 @@ const About = () => {
     <div className="mx-3 lg:mx-12 my-8">
       <Fade top>
         <div className="section-title mx-2 font-bold text-xl md:text-2xl text-center pb-6 text-info">
-          <h1>Learn more about us || تعلم المزيد عنا</h1>
+          <h1>تعلم المزيد عنا</h1>
         </div>
       </Fade>
       <div className="lg:flex justify-between items-center">

@@ -8,7 +8,7 @@ const Contact = () => {
       <div>
         <div className="section-title text-center font-bold text-xl md:text-2xl py-5 text-info">
           <Fade left>
-            <h2>Contact with us || تواصل معنا</h2>
+            <h2>تواصل معنا</h2>
           </Fade>
         </div>
         <div className="flex flex-col lg:gap-x-6 lg:flex-row bg-[#efefef] p-8 my-5 rounded">

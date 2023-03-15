@@ -30,7 +30,7 @@ const Products = () => {
       </Helmet>
       <div className="section-title mx-2 font-semibold text-xl md:text-2xl text-center pb-6 text-info">
         <Fade left>
-          <h1>Our services || خدماتنا</h1>
+          <h1>خدماتنا</h1>
         </Fade>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 lg:mx-10">

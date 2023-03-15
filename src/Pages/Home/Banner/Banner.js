@@ -26,11 +26,9 @@ const Banner = () => {
       <div className="section-title mx-2 font-bold text-xl md:text-2xl text-center py-5 text-info">
         <Fade left>
           <h1>نشتري اثاث المستعمل بأفضل الأسعار</h1>
-          <h2>We buy your used furniture at the best prices 🥰</h2>
         </Fade>
       </div>
 
-      {/* <h1> || نشتري أثاثك المستعمل بأفضل الأسعار .</h1> */}
       <Swiper
         slidesPerView={2}
         spaceBetween={5}
